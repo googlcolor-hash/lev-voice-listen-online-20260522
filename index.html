@@ -5,21 +5,24 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>LEV 3 New Variants</title>
 <style>
-:root{--bg:#1f1f20;--card:#2a2b2d;--line:#3b3d40;--txt:#efefef;--muted:#b9b9b9}
-body{margin:0;padding:18px;background:var(--bg);color:var(--txt);font:15px/1.45 Segoe UI,Arial,sans-serif}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:0 0 12px}
+:root{--bg:#17191b;--card:#222529;--line:#353a40;--txt:#edf0f2;--muted:#aab0b6;--accent:#8ad0ff}
+body{margin:0;padding:18px;background:linear-gradient(180deg,#17191b,#1d2023);color:var(--txt);font:15px/1.45 Segoe UI,Arial,sans-serif}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px}
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:1200px){.grid{grid-template-columns:1fr 1fr 1fr}}
-video,audio{width:100%}
+video,audio{width:100%;border-radius:10px}
 .small{font-size:13px;color:var(--muted)}
+.wave{width:100%;border:1px solid var(--line);border-radius:10px;background:#1a1d20}
+h3{margin:0 0 8px 0}
+a{color:var(--accent)}
 </style>
 </head>
 <body>
 <div class="card"><b>3 новых варианта</b> — чистая речь, без эхо/реверба, с синхронизацией видео под речь в ключевых кусках и уменьшенной вертикалью кадра.</div>
 <div class="grid">
-  <div class="card"><h3>Variant 01 Soft Sync</h3><div class="small">pause 0.34 / 0.52, video slow +3%</div><video controls src="variant_01_soft_sync/FULL 03_audio_video_clean_sync.mp4"></video><audio controls src="variant_01_soft_sync/lev_full03_voice_clean_sync.wav"></audio></div>
-  <div class="card"><h3>Variant 02 Balanced Sync</h3><div class="small">pause 0.40 / 0.62, video slow +6%</div><video controls src="variant_02_balanced_sync/FULL 03_audio_video_clean_sync.mp4"></video><audio controls src="variant_02_balanced_sync/lev_full03_voice_clean_sync.wav"></audio></div>
-  <div class="card"><h3>Variant 03 Deep Sync</h3><div class="small">pause 0.46 / 0.72, video slow +9%</div><video controls src="variant_03_deep_sync/FULL 03_audio_video_clean_sync.mp4"></video><audio controls src="variant_03_deep_sync/lev_full03_voice_clean_sync.wav"></audio></div>
+  <div class="card"><h3>Variant 01 Soft Sync</h3><div class="small">pause 0.34 / 0.52, video slow +3%</div><video controls src="variant_01_soft_sync/FULL 03_audio_video_clean_sync.mp4"></video><div class="small">Waveform</div><img class="wave" alt="Waveform 01" src="variant_01_soft_sync/waveform.png"/><audio controls src="variant_01_soft_sync/lev_full03_voice_clean_sync.wav"></audio></div>
+  <div class="card"><h3>Variant 02 Balanced Sync</h3><div class="small">pause 0.40 / 0.62, video slow +6%</div><video controls src="variant_02_balanced_sync/FULL 03_audio_video_clean_sync.mp4"></video><div class="small">Waveform</div><img class="wave" alt="Waveform 02" src="variant_02_balanced_sync/waveform.png"/><audio controls src="variant_02_balanced_sync/lev_full03_voice_clean_sync.wav"></audio></div>
+  <div class="card"><h3>Variant 03 Deep Sync</h3><div class="small">pause 0.46 / 0.72, video slow +9%</div><video controls src="variant_03_deep_sync/FULL 03_audio_video_clean_sync.mp4"></video><div class="small">Waveform</div><img class="wave" alt="Waveform 03" src="variant_03_deep_sync/waveform.png"/><audio controls src="variant_03_deep_sync/lev_full03_voice_clean_sync.wav"></audio></div>
 </div>
 </body>
 </html>
