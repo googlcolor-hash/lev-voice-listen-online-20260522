@@ -1,28 +1,230 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>LEV 3 New Variants</title>
-<style>
-:root{--bg:#17191b;--card:#222529;--line:#353a40;--txt:#edf0f2;--muted:#aab0b6;--accent:#8ad0ff}
-body{margin:0;padding:18px;background:linear-gradient(180deg,#17191b,#1d2023);color:var(--txt);font:15px/1.45 Segoe UI,Arial,sans-serif}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px}
-.grid{display:grid;grid-template-columns:1fr;gap:12px}
-@media(min-width:1200px){.grid{grid-template-columns:1fr 1fr 1fr}}
-video,audio{width:100%;border-radius:10px}
-.small{font-size:13px;color:var(--muted)}
-.wave{width:100%;border:1px solid var(--line);border-radius:10px;background:#1a1d20}
-h3{margin:0 0 8px 0}
-a{color:var(--accent)}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Трекер проекта — Лев Николаевич</title>
+  <style>
+    :root {
+      --bg-main: #17181a;
+      --bg-panel: #23262b;
+      --bg-panel-soft: #2a2d33;
+      --line: #3b4048;
+      --text: #eceff3;
+      --muted: #a8afb9;
+      --accent: #84b8ff;
+      --accent-soft: #2f425d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #21242a 0%, #17181a 45%, #141517 100%);
+      color: var(--text);
+      font: 16px/1.55 "Segoe UI", Tahoma, Arial, sans-serif;
+      min-height: 100%;
+    }
+
+    .wrap {
+      width: min(1100px, 100% - 32px);
+      margin: 24px auto 36px;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, #242830 0%, #1e2025 100%);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 10px;
+      line-height: 1.25;
+      letter-spacing: 0.2px;
+    }
+
+    h1 {
+      font-size: clamp(1.3rem, 1rem + 1.6vw, 2rem);
+    }
+
+    h2 {
+      font-size: clamp(1.05rem, 0.95rem + 0.8vw, 1.45rem);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .plan {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .plan li {
+      margin: 0 0 8px;
+    }
+
+    .brief {
+      margin: 0;
+      padding: 12px 14px;
+      border: 1px solid var(--accent-soft);
+      border-radius: 10px;
+      background: #1e2630;
+      color: #dfe7f2;
+    }
+
+    details {
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--bg-panel-soft);
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      list-style: none;
+      padding: 12px 14px;
+      background: #2a2f37;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .details-body {
+      padding: 12px 14px 14px;
+      color: var(--muted);
+    }
+
+    .details-body p {
+      margin: 0 0 10px;
+    }
+
+    .details-body ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .details-body li {
+      margin: 0 0 8px;
+      color: var(--text);
+    }
+
+    .timeline {
+      margin: 12px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .timeline li {
+      border: 1px solid #40454e;
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: #22252b;
+    }
+
+    .status {
+      display: inline-block;
+      margin-right: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #dce8ff;
+      background: #2f4a6b;
+    }
+    .status.done { background: #2f5f46; color: #d9f8e9; }
+    .status.todo { background: #5d4d2f; color: #ffeecf; }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    @media (min-width: 900px) {
+      .grid {
+        grid-template-columns: 0.9fr 1.1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="card"><b>3 новых варианта</b> — чистая речь, без эхо/реверба, с синхронизацией видео под речь в ключевых кусках и уменьшенной вертикалью кадра.</div>
-<div class="grid">
-  <div class="card"><h3>Variant 01 Soft Sync</h3><div class="small">pause 0.34 / 0.52, video slow +3%</div><video controls src="variant_01_soft_sync/FULL 03_audio_video_clean_sync.mp4"></video><div class="small">Waveform</div><img class="wave" alt="Waveform 01" src="variant_01_soft_sync/waveform.png"/><audio controls src="variant_01_soft_sync/lev_full03_voice_clean_sync.wav"></audio></div>
-  <div class="card"><h3>Variant 02 Balanced Sync</h3><div class="small">pause 0.40 / 0.62, video slow +6%</div><video controls src="variant_02_balanced_sync/FULL 03_audio_video_clean_sync.mp4"></video><div class="small">Waveform</div><img class="wave" alt="Waveform 02" src="variant_02_balanced_sync/waveform.png"/><audio controls src="variant_02_balanced_sync/lev_full03_voice_clean_sync.wav"></audio></div>
-  <div class="card"><h3>Variant 03 Deep Sync</h3><div class="small">pause 0.46 / 0.72, video slow +9%</div><video controls src="variant_03_deep_sync/FULL 03_audio_video_clean_sync.mp4"></video><div class="small">Waveform</div><img class="wave" alt="Waveform 03" src="variant_03_deep_sync/waveform.png"/><audio controls src="variant_03_deep_sync/lev_full03_voice_clean_sync.wav"></audio></div>
-</div>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Создание видео с Львом Николаевичем</h1>
+      <p class="subtitle">Проектный трекер (страница 1): общий план и текущий контур работ по голосу.</p>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>Общий план действий</h2>
+        <ol class="plan">
+          <li>Создание голоса</li>
+          <li>Создание ключевых кадров</li>
+          <li>Создание анимации</li>
+          <li>Проработка визуализации в голографии</li>
+          <li>Создание трехмерной модели</li>
+          <li>Тестирование</li>
+        </ol>
+      </section>
+
+      <section class="panel">
+        <h2>Работа с голосом</h2>
+        <p class="brief">
+          Источник: <strong>FULL 03</strong>.<br>
+          Цель: плавная, ровная, взрослая речь без рывков, с корректными паузами и без резких скачков интонации.<br>
+          Режимы: <strong>оба</strong> — RVC + TTS.
+        </p>
+
+        <details open>
+          <summary>Вводные и этапы (раскрыть/свернуть)</summary>
+          <div class="details-body">
+            <p>Ключевые вводные, зафиксированные перед продакшен-прогоном:</p>
+            <ul>
+              <li>Базовый голос берется из видео FULL 03 как текущий эталон тембра.</li>
+              <li>Приоритет качества: разборчивость, естественные паузы, ровный темп и взрослая подача.</li>
+              <li>Собрать два рабочих контура: RVC-перенос и TTS-генерация с последующим сравнением.</li>
+              <li>Сделать контрольный прогон на финальном тексте и убрать ускорения/рывки на проблемных местах.</li>
+              <li>Подготовить варианты для интеграции с видеорядом и дальнейшей синхронизации.</li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 style="margin-top:14px;">Ход работы</h3>
+        <ul class="timeline">
+          <li><span class="status done">DONE</span>Найдена и подтверждена рабочая RVC-сборка: <code>D:\RVC</code> (~42.26 GB), активная ветка <code>RVC_WebUI</code>.</li>
+          <li><span class="status done">DONE</span>Пройден smoke-тест на фрагменте FULL 03 (RVC модель <code>LEV_MINI_V2_2026_04_01</code>, f0=pm).</li>
+          <li><span class="status done">DONE</span>Собран первый контур “текст → TTS → RVC” и получены 3 голосовых варианта.</li>
+          <li><span class="status todo">TODO</span>Сделать финальную тонкую настройку пауз/интонации и выбрать лучший вариант для синхронизации с видео.</li>
+        </ul>
+        <p class="muted">Обновлено: 24.05.2026. Рекомендованный запасной референс: https://youtu.be/geCQXgFVGeI</p>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
