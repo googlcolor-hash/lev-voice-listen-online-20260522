@@ -1,0 +1,10 @@
+{
+  "pid": 41284,
+  "started": "2026-05-21T02:40:42",
+  "segment": "seg02_05p00_10p00",
+  "outLog": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\logs\\seg02_runner.out.log",
+  "errLog": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\logs\\seg02_runner.err.log",
+  "expected": "5s / 125 frames",
+  "port": 8193,
+  "previousSeg01Video": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\iterative_lipsync_20260521_021938\\videos\\20260521_021938_LEV_WAIST_SEG01_00p00_05p00.mp4"
+}

@@ -1,0 +1,10 @@
+{
+  "pid": 29840,
+  "started": "2026-05-21T02:19:38",
+  "plan": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\segment_plan.json",
+  "segment": "seg01_00p00_05p00",
+  "outLog": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\logs\\seg01_runner.out.log",
+  "errLog": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\logs\\seg01_runner.err.log",
+  "expected": "about 5s / 125 frames",
+  "port": 8193
+}

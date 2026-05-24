@@ -1,0 +1,8 @@
+{
+  "status": "DONE_QA_PASS",
+  "video": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\iterative_lipsync_20260521_041520\\videos\\20260521_041520_LEV_WAIST_SEG02_05p00_10p00_RETRY8194_LONG.mp4",
+  "storyboard": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\seg02_storyboard_6frames.jpg",
+  "lastFrame": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\seg02_last_frame_for_seg03.jpg",
+  "qa": "5.00s, 125 frames in muxed mp4; source frames 133; head not cropped on contact sheet; Lev identity readable; lips visible/open on speech frames.",
+  "checked": "2026-05-21T05:41:20"
+}

@@ -1,0 +1,31 @@
+{
+  "created": "2026-05-21T02:19:37",
+  "source": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_lipsync_20260520\\full03_01p053_15p653_14p6s.wav",
+  "strategy": "short stable windows from proven LEV_WAIST_FULL03_14p6s_v4_motion8",
+  "segments": [
+    {
+      "frames": 125,
+      "id": "seg01_00p00_05p00",
+      "wav": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\audio\\seg01_00p00_05p00.wav",
+      "start": "0",
+      "dur": "5.0",
+      "label": "0.00-5.00"
+    },
+    {
+      "frames": 125,
+      "id": "seg02_05p00_10p00",
+      "wav": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\audio\\seg02_05p00_10p00.wav",
+      "start": "5.0",
+      "dur": "5.0",
+      "label": "5.00-10.00"
+    },
+    {
+      "frames": 115,
+      "id": "seg03_10p00_14p60",
+      "wav": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\audio\\seg03_10p00_14p60.wav",
+      "start": "10.0",
+      "dur": "4.6",
+      "label": "10.00-14.60"
+    }
+  ]
+}

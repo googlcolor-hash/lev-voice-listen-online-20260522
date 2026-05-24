@@ -1,0 +1,12 @@
+{
+  "pid": 21924,
+  "started": "2026-05-21T05:42:01",
+  "segment": "seg03_10p00_14p60",
+  "attempt": "retry8194",
+  "outLog": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\logs\\seg03_retry8194_20260521_054201.out.log",
+  "errLog": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\logs\\seg03_retry8194_20260521_054201.err.log",
+  "port": 8194,
+  "expected": "4.60s / 115 frames",
+  "historyPolls": 2400,
+  "previousSeg02LastFrame": "C:\\Users\\Admin\\Documents\\Playground\\outputs\\lev_waist_segmented_20260521\\seg02_last_frame_for_seg03.jpg"
+}
